@@ -1,9 +1,11 @@
 {
   "$schema": "https://turbo.build/schema.json",
+  "globalEnv": ["DATABASE_URL", "DATABASE_AUTH_TOKEN"],
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": ["dist/**", ".next/**"]
+      "outputs": ["dist/**", ".next/**"],
+      "env": ["DATABASE_URL", "DATABASE_AUTH_TOKEN"]
     },
     "lint": {
       "outputs": []

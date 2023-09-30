@@ -11,6 +11,7 @@
     "@elysiajs/static": "^0.7.0",
     "@elysiajs/swagger": "^0.7.1",
     "@sinclair/typebox": "^0.31.15",
+    "drizzle": "workspace:*",
     "elysia": "^0.7.6"
   },
   "devDependencies": {
